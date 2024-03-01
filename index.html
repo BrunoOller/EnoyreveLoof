@@ -15,35 +15,65 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
-    <link rel="stylesheet" href="./assets/css/audio.css">
+    <link rel="stylesheet" href="./assets/css/button.css">
 </head>
 
 <body>
     <!-- Cabeçalho/Header -->
-    <header class="cabecalho">
+    <header class="cabecalho" id="cabecalho">
+
+        <!-- Logo -->
         <img class="logo" src="./assets/img/logo-el.png" alt="">
+
+        <!-- Abas -->
         <nav class="nav-bar">
             <ul class="abas">
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Imagens</a></li>
+                <li><a href="#2">Sobre</a></li>
+                <li><a href="#3">Imagens</a></li>
                 <li><a href="../EnoyreveLoof-creditos/creditos.html">Créditos</a></li>
-                <li><a href="#">Download<img class="icon-d" src="./assets/img/icone-download.svg" alt=""></i></a></li>
+                <li><a href="#4">Download<img class="icon-d" src="./assets/img/icone-download.svg" alt=""></a></li>
                 <li><a href="https://discord.gg/r3qfYHhY8X">Suporte <img class="icon-s" src="./assets/img/icone-link.svg" alt=""></a></li>
             </ul>
         </nav>
+
     </header>
 
-    <!-- Imagem do Jogo/Image of game -->
-    <section class="img-game">
-        <img src="./assets/img/img-jogo.png" alt="">
-    </section>
+    <!-- Principal/Todo o conteúdo do Site -->
+    <main>
 
-    <div id="audio-controls">
-        <audio id="background-music" src="./assets/sound/batman.mp4" loop></audio>
-        <button id="toggle-music-button" class="play"><i class="fas fa-play"></i></button>
-        <button id="watch-trailer-button">Trailer</button>
-    </div>
+        <!-- Início do Site/Imagem do game -->
+        <section id="1">
 
+            <!-- Imagem do jogo -->
+            <div class="img-game">
+                <img src="./assets/img/img-jogo.png" alt="">
+            </div>
+
+        <!-- Sobre/About -->
+        </section>
+
+        <section id="2">
+            <div class="sobre">
+                <h1>titulo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptas sit repellat veniam! Aspernatur excepturi corrupti velit porro earum nemo error recusandae est, ullam unde totam a maxime officia accusantium! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui numquam sed amet ad doloribus aspernatur tempore delectus adipisci voluptates, officia iure. Iure cumque sed inventore quia corrupti officiis corporis odio. <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus praesentium minima atque. Doloremque facilis consectetur, unde quo sequi repellat? Libero quaerat atque dignissimos saepe in facere voluptates voluptatem. Illum, debitis. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat molestias distinctio commodi harum cumque non modi, corrupti dolorum, eius cupiditate excepturi. Corporis adipisci nihil, provident quod hic vitae suscipit.</p>
+            </div>
+        </section>
+
+
+        <!-- Botões -->
+        <div id="audio-controls">
+            <audio id="background-music" src="./assets/sound/batman.mp4" loop></audio>
+            <button id="toggle-music-button" class="play"><i class="fas fa-play"></i></button>
+            <button id="watch-trailer-button">Trailer</button>
+        </div>
+
+        <button onclick="scrollToTop()" id="btnScrollToTop" title="Voltar ao Topo">
+            <i class="fas fa-arrow-up"></i> <!-- Ícone da seta para cima -->
+          </button>
+    </main>
+
+    <!-- Link JS -->
     <script src="./assets/js/script.js"></script>
 </body>
 

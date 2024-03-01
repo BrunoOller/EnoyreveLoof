@@ -1,0 +1,50 @@
+#audio-controls {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+#toggle-music-button, #watch-trailer-button {
+    font-size: 16px; /* Tamanho da fonte reduzido */
+    background-color: #000000; /* Cor cinza escuro */
+    color: #cecece; /* Cor branca para o texto */
+    border: none;
+    border-radius: 5px; /* Borda arredondada */
+    height: 30px; /* Altura reduzida */
+    cursor: pointer;
+    margin-right: 10px; /* Margem à direita para separar os botões */
+    padding: 0 16px; /* Espaçamento interno reduzido */
+    font-family: "Merriweather", serif;
+    transition: .3s;
+}
+
+#watch-trailer-button:hover {
+    background-color: #292929;
+    transition: .3s;
+}
+
+#toggle-music-button:hover {
+    background-color: #292929;
+    transition: .3s;
+}
+
+#btnScrollToTop {
+    display: none; /* Esconder o botão por padrão */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    background-color: #000000; /* Cor cinza */
+    color: var(--cor-principal-texts);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  #btnScrollToTop:hover {
+    background-color: #292929; /* Mudança de cor ao passar o mouse */
+  }

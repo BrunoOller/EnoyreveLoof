@@ -10,6 +10,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: black;
+    scroll-behavior: smooth;
 }
 
 li{
@@ -19,4 +20,8 @@ li{
 a {
     text-decoration: none;
     color: #C8C8C8;
+}
+
+body {
+    overflow-x: hidden; /* Isso oculta o scroll horizontal */
 }

@@ -25,3 +25,13 @@ a {
 body {
     overflow-x: hidden; /* Isso oculta o scroll horizontal */
 }
+
+::-webkit-scrollbar{
+    background-color: #000;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #1b1b1b;
+    border-radius: 16px;
+}

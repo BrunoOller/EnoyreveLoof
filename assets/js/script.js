@@ -1,4 +1,6 @@
 
+// ----------------------------------------------------------------------------------------------------- 01
+
 // Função dos Botões de Música e Trailer
 document.addEventListener('DOMContentLoaded', function () {
     const audio = document.getElementById('background-music');
@@ -20,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// ----------------------------------------------------------------------------------------------------- 02
+
 // Função para o botão de scrollar até o topo da página
 function scrollToTop() {
     window.scrollTo({
@@ -38,11 +42,12 @@ window.addEventListener("scroll", function () {
     }
 });
 
+// ----------------------------------------------------------------------------------------------------- 03
 
 // Função para o header ocultar e aparecer
 let lastScrollTop = 0;
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScroll > lastScrollTop) {
@@ -54,3 +59,5 @@ window.addEventListener("scroll", function() {
     }
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
 }, false);
+
+// ----------------------------------------------------------------------------------------------------- 00

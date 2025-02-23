@@ -1,112 +1,84 @@
 
 /* Cores do Projeto/Website */
 :root{
-    --cor-principal: #000;
-    --cor-principal-texts: #C8C8C8;
-    --cor-segundaria: rgb(240, 240, 240);
+    --cor-fundo: #000000;
+    --cor-textos: #f2f2f2;
+    --cor-secundaria: #969696;
 }
 
-/* Cabeçalho/Header */
 .cabecalho {
+    position: absolute;
     width: 100%;
-    height: 125px;
+    height: auto;
+    padding: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #000;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    transition: top 0.3s;
+    z-index: 1;
+    gap: 40px;
+
+    & .logo {
+        width: 180px;
+        height: auto;
+    }
+
+    & .menu {
+        width: 50%;
+        height: auto;
+
+        & ul {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            gap: 120px;
+
+            & a {
+                font-weight: 500;
+                text-transform: uppercase;
+                color: var(--cor-secundaria);
+                transition: all .35s ease-out;
+
+                &:hover {
+                    color: #dfdfdf;
+                    transition: all .35s ease-in;
+                }
+
+                & .i-download {
+                    width: 18px;
+                    height: auto;
+                }
+
+                & .i-download, .i-link {
+                    filter: brightness(60%);
+                    transition: all .35s ease-out;
+                }
+
+                &:hover .i-download {
+                    filter: brightness(100%);
+                    transition: all .35s ease-in;
+                }
+
+                &:hover .i-link {
+                    filter: brightness(100%);
+                    transition: all .35s ease-in;
+                }
+            }
+        }
+    }
 }
 
-.cabecalho.hidden {
-    top: -145px;
-}
-
-.cabecalho .logo {
-    width: 130px;
-    height: 130px;
-}
-
-.nav-bar {
-    width: 900px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-bar ul {
+.s-banner {
     width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.nav-bar ul a {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: "Merriweather", serif;
-}
-
-a .icon-d {
-    width: 21px;
-    height: 21px;
-    margin-top: -15px;
-}
-
-a .icon-s {
-    width: 16px;
-    height: 16px;
-}
-
-.nav-bar ul a:hover {
-    color: rgb(240, 240, 240);
-}
-
-.cabecalho, .nav-bar {
-    max-width: 100%; /* Defina a largura máxima como 100% */
-}
-
-.cabecalho .logo, .nav-bar ul {
-    max-width: 100%; /* Defina a largura máxima como 100% */
-}
-
-/* Imagem/Image */
-.img-game {
-    width: 100%;
-    height: 1100px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    & .banner {
+        width: 85%;
+        height: auto;
+    }
 }
 
-.img-game img {
-    max-width: 1350px; /* Mudança feita aqui */
-    height: auto;
-}
 
-.sobre {
-    max-width: 100%; /* Mudança feita aqui */
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.sobre h1{
-    width: 900px;
-    height: auto;
-
-}
-
-.sobre p{
-    width: 900px;
-    height: 700px;
-    text-align: center;
-
-}

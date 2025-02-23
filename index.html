@@ -8,73 +8,32 @@
     <title>Enoyreve Loof</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/img/logo-el.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/logo-el.png" type="image/x-icon">
 
     <!-- Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/fonts.css">
-    <link rel="stylesheet" href="./assets/css/button.css">
 </head>
 
 <body>
-    <!-- Cabeçalho/Header -->
     <header class="cabecalho" id="cabecalho">
-
-        <!-- Logo -->
-        <img class="logo" src="./assets/img/logo-el.png" alt="">
-
-        <!-- Abas -->
-        <nav class="nav-bar">
-            <ul class="abas">
-                <li><a href="#2">Sobre</a></li>
+        <img src="./assets/img/logo-el.png" alt="Logo do jogo Enoyreve Loof" class="logo">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Sobre</a></li>
                 <li><a href="#">Imagens</a></li>
-                <li><a href="#">Créditos</a></li>
-                <li><a href="#">Download<img class="icon-d" src="./assets/img/icone-download.svg" alt=""></a></li>
-                <li><a href="https://discord.gg/r3qfYHhY8X">Suporte <img class="icon-s" src="./assets/img/icone-link.svg" alt=""></a></li>
+                <li><a href="#">Download <img class="i-download" src="./assets/img/icone-download.svg"></a></li>
+                <li><a href="#">Suporte <img class="i-link" src="./assets/img/icone-link.svg"></a></li>
             </ul>
         </nav>
-
     </header>
 
-    <!-- Principal/Todo o conteúdo do Site -->
     <main>
-
-        <!-- Início do Site/Imagem do game -->
-        <section id="1">
-
-            <!-- Imagem do jogo -->
-            <div class="img-game">
-                <img src="./assets/img/img-jogo.png" alt="">
-            </div>
-
-        <!-- Sobre/About -->
+        <section class="s-banner">
+            <img class="banner" src="./assets/img/banner-el.png" alt="Banner do jogo Enoyreve Loof">
         </section>
-
-        <section id="2">
-            <div class="sobre">
-                <h1>titulo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptas sit repellat veniam! Aspernatur excepturi corrupti velit porro earum nemo error recusandae est, ullam unde totam a maxime officia accusantium! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui numquam sed amet ad doloribus aspernatur tempore delectus adipisci voluptates, officia iure. Iure cumque sed inventore quia corrupti officiis corporis odio. <br>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus praesentium minima atque. Doloremque facilis consectetur, unde quo sequi repellat? Libero quaerat atque dignissimos saepe in facere voluptates voluptatem. Illum, debitis. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat molestias distinctio commodi harum cumque non modi, corrupti dolorum, eius cupiditate excepturi. Corporis adipisci nihil, provident quod hic vitae suscipit.</p>
-            </div>
-        </section>
-
-
-        <!-- Botões -->
-        <div id="audio-controls">
-            <audio id="background-music" src="./assets/sound/batman.mp4" loop></audio>
-            <button id="toggle-music-button" class="play"><i class="fas fa-play"></i></button>
-            <button id="watch-trailer-button">Trailer</button>
-        </div>
-
-        <button onclick="scrollToTop()" id="btnScrollToTop" title="Voltar ao Topo">
-            <i class="fas fa-arrow-up"></i> <!-- Ícone da seta para cima -->
-          </button>
     </main>
-
-    <!-- Link JS -->
-    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
